@@ -1,0 +1,15 @@
+{
+    "name": "jupi007/prestashop-webservice-bundle",
+    "description": "Symfony integration for PrestaShop Webservice lib",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jupi007",
+            "email": "paul.kepinski@orange.fr"
+        }
+    ],
+    "require": {
+        "prestashop/prestashop-webservice-lib": "dev-master"
+    }
+}
