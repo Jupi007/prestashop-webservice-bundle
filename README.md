@@ -68,21 +68,7 @@ Prerequisites
 
 First at all, you must enable the webservice feature of your PrestaShop store and create an API key access. Please have a look at the official doc: [Creating access to the Webservice](https://devdocs.prestashop.com/1.7/webservice/tutorials/creating-access/).
 
-With Symfony Flex
------------------
-
-Symfony flex should have created a `config/packages/jupi007_prestashop_webservice.yaml`. But you don't need to edit this file.
-The API connection informations are stored into two environment variables called `PRESTA_WEBSERVICE_ROOT_PATH` and `PRESTA_WEBSERVICE_AUTH_KEY`.
-
-Open your local `.env.local` file and fill in your own informations:
-
-```
-PRESTA_WEBSERVICE_ROOT_PATH=https://absolute-path-to-your-store.com
-PRESTA_WEBSERVICE_AUTH_KEY=ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789
-```
-
-Without Symfony Flex
----------------------
+---
 
 It is recommended to fill secret infos like API keys into `.env.local` file.
 
