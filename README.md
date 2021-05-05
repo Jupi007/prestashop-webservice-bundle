@@ -10,7 +10,7 @@ This bundle require the [PrestaShop Webservice lib](https://github.com/PrestaSho
 
 Before installing this bundle, you must add these lines into the `composer.json` file of your project:
 
-```json
+```js
 {
     // ...
     "minimum-stability": "dev",
