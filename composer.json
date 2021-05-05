@@ -11,5 +11,18 @@
     ],
     "require": {
         "prestashop/prestashop-webservice-lib": "dev-master"
+    },
+    "require-dev": {
+        "symfony/framework-bundle": "5.2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jupi007\\PrestashopWebserviceBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jupi007\\PrestashopWebserviceBundle\\Tests\\": "tests/"
+        }
     }
 }

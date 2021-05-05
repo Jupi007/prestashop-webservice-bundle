@@ -1,0 +1,7 @@
+services:
+    Jupi007\PrestashopWebserviceBundle\Services\PrestashopWebservice:
+        arguments: ['', '', '']
+
+    jupi007_prestashop_webservice:
+        alias: Jupi007\PrestashopWebserviceBundle\Services\PrestashopWebservice
+        public: true
