@@ -1,7 +1,7 @@
-Jupi007 PrestaShop Webservice Bundle
-====================================
+Jupi007 PrestaShop Webservice (Extra) Bundle
+============================================
 
-Unofficial Symfony integration of [PrestaShop Webservice lib](https://github.com/PrestaShop/PrestaShop-webservice-lib).
+Symfony integration of [PrestaShop Webservice lib](https://github.com/PrestaShop/PrestaShop-webservice-lib) and [PrestaShop Webservice lib Extra](https://github.com/Jupi007/prestashop-webservice-extra).
 
 Prerequisites
 =============
@@ -91,14 +91,16 @@ PRESTA_WEBSERVICE_AUTH_KEY=ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789
 Usage
 =====
 
-Just inject the service by type-hinting an argument with the `Jupi007\PrestashopWebserviceBundle\Services\PrestashopWebservice` class:
+Just inject the service by type-hinting an argument with the `Jupi007\PrestashopWebserviceBundle\Services\PrestashopWebservice` or `PrestashopWebserviceExtra` class:
 
 ```php
 // src/Controller/ProductController.php
 namespace App\Controller;
 
-use Jupi007\PrestashopWebserviceBundle\Services\PrestashopWebservice;
 use Symfony\Component\HttpFoundation\Response;
+use Jupi007\PrestashopWebserviceBundle\Services\PrestashopWebservice;
+// or
+use Jupi007\PrestashopWebserviceBundle\Services\PrestashopWebserviceExtra;
 
 class ProductController
 {
@@ -111,7 +113,25 @@ class ProductController
 
         // ...
     }
+
+    // or
+
+    /**
+     * @Route("/products")
+     */
+    public function list(PrestashopWebserviceExtra $psWebservice): Response
+    {
+        $products = $psWebservice->initQuery()
+                                 ->get('products')
+                                 ->executeQuery();
+
+        // ...
+    }
 }
 ```
 
-Once you have a `PrestashopWebservice` instance, you can use it just like the normal Prestashop Webservice lib. See the official documentation for more informations: https://devdocs.prestashop.com/1.7/webservice/tutorials/prestashop-webservice-lib/
+Once you have a `PrestashopWebservice` or `PrestashopWebserviceExtra` instance, you can use it just like the normal corresponding library.
+
+See the official documentation for more informations: https://devdocs.prestashop.com/1.7/webservice/tutorials/prestashop-webservice-lib/
+
+And also the [PrestaShop Webservice lib Extra](https://github.com/Jupi007/prestashop-webservice-extra) repository.

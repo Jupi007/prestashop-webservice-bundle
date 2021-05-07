@@ -4,10 +4,9 @@ declare(strict_types=1);
 
 namespace Jupi007\PrestashopWebserviceBundle\Services;
 
-use PrestaShopWebservice as PrestaShopWebserviceLib;
-use PrestaShopWebserviceException;
+use Jupi007\PrestashopWebserviceExtra\PrestashopWebservice as PrestashopWebserviceLib;
 
-final class PrestashopWebservice extends PrestaShopWebserviceLib
+class PrestashopWebservice extends PrestaShopWebserviceLib
 {
-    
+
 }
