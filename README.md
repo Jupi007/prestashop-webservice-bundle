@@ -120,8 +120,7 @@ class ProductController
      */
     public function list(PrestashopWebserviceExtra $psWebservice): Response
     {
-        $products = $psWebservice->initQuery()
-                                 ->get('products')
+        $products = $psWebservice->get('products')
                                  ->executeQuery();
 
         // ...
