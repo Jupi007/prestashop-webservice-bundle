@@ -1,5 +1,4 @@
-Jupi007 PrestaShop Webservice (Extra) Bundle
-============================================
+<h1 align="center">Jupi007 PrestaShop Webservice (Extra) Bundle</h1>
 
 Symfony integration of [PrestaShop Webservice lib](https://github.com/PrestaShop/PrestaShop-webservice-lib) and [PrestaShop Webservice lib Extra](https://github.com/Jupi007/prestashop-webservice-extra).
 
