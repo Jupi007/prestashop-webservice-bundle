@@ -11,7 +11,7 @@ class Configuration implements ConfigurationInterface
 {
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder('jupi007_prestashop_webservice');
+        $treeBuilder = new TreeBuilder('jupi007_presta_shop_webservice');
 
         $treeBuilder->getRootNode()
             ->addDefaultsIfNotSet()

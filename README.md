@@ -71,10 +71,10 @@ First at all, you must enable the webservice feature of your PrestaShop store an
 
 It is recommended to fill secret infos like API keys into `.env.local` file.
 
-To do this, create a `config/packages/jupi007_prestashop_webservice.yaml`:
+To do this, create a `config/packages/jupi007_presta_shop_webservice.yaml`:
 
 ```yaml
-jupi007_prestashop_webservice:
+jupi007_presta_shop_webservice:
   connection:
     store_root_path: '%env(PRESTA_WEBSERVICE_ROOT_PATH)%'
     authentication_key: '%env(PRESTA_WEBSERVICE_AUTH_KEY)%'

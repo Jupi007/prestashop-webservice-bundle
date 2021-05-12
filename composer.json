@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "jupi007/prestashop-webservice-lib-extra": "0.*"
+        "jupi007/prestashop-webservice-lib-extra": "^1.0.0"
     },
     "require-dev": {
         "symfony/framework-bundle": "5.2.*"
