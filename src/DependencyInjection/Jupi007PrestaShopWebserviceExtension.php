@@ -9,6 +9,7 @@ use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 use Jupi007\PrestaShopWebserviceBundle\Services\PrestaShopWebservice;
+use Jupi007\PrestaShopWebserviceBundle\Services\PrestaShopWebserviceExtra;
 
 class Jupi007PrestaShopWebserviceExtension extends Extension
 {
@@ -28,7 +29,7 @@ class Jupi007PrestaShopWebserviceExtension extends Extension
         $service->replaceArgument(1, $config['connection']['authentication_key']);
         $service->replaceArgument(2, $config['debug']);
 
-        $service = $container->getDefinition(PrestaShopWebservice::class);
+        $service = $container->getDefinition(PrestaShopWebserviceExtra::class);
         $service->replaceArgument(0, $config['connection']['store_root_path']);
         $service->replaceArgument(1, $config['connection']['authentication_key']);
         $service->replaceArgument(2, $config['debug']);

@@ -10,7 +10,6 @@
         }
     ],
     "require": {
-        "prestashop/prestashop-webservice-lib": "dev-master",
         "jupi007/prestashop-webservice-lib-extra": "0.*"
     },
     "require-dev": {
