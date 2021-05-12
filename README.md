@@ -55,7 +55,7 @@ in the `config/bundles.php` file of your project:
 
 return [
     // ...
-    Jupi007\PrestashopWebserviceBundle\Jupi007PrestashopWebserviceBundle::class => ['all' => true],
+    Jupi007\PrestaShopWebserviceBundle\Jupi007PrestaShopWebserviceBundle::class => ['all' => true],
 ];
 ```
 
@@ -90,23 +90,23 @@ PRESTA_WEBSERVICE_AUTH_KEY=ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789
 Usage
 =====
 
-Just inject the service by type-hinting an argument with the `Jupi007\PrestashopWebserviceBundle\Services\PrestashopWebservice` or `PrestashopWebserviceExtra` class:
+Just inject the service by type-hinting an argument with the `Jupi007\PrestaShopWebserviceBundle\Services\PrestaShopWebservice` or `PrestaShopWebserviceExtra` class:
 
 ```php
 // src/Controller/ProductController.php
 namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
-use Jupi007\PrestashopWebserviceBundle\Services\PrestashopWebservice;
+use Jupi007\PrestaShopWebserviceBundle\Services\PrestaShopWebservice;
 // or
-use Jupi007\PrestashopWebserviceBundle\Services\PrestashopWebserviceExtra;
+use Jupi007\PrestaShopWebserviceBundle\Services\PrestaShopWebserviceExtra;
 
 class ProductController
 {
     /**
      * @Route("/products")
      */
-    public function list(PrestashopWebservice $psWebservice): Response
+    public function list(PrestaShopWebservice $psWebservice): Response
     {
         $products = $psWebservice->get(['resource' => 'products']);
 
@@ -118,7 +118,7 @@ class ProductController
     /**
      * @Route("/products")
      */
-    public function list(PrestashopWebserviceExtra $psWebservice): Response
+    public function list(PrestaShopWebserviceExtra $psWebservice): Response
     {
         $products = $psWebservice->get('products')
                                  ->executeQuery();
@@ -128,7 +128,7 @@ class ProductController
 }
 ```
 
-Once you have a `PrestashopWebservice` or `PrestashopWebserviceExtra` instance, you can use it just like the normal corresponding library.
+Once you have a `PrestaShopWebservice` or `PrestaShopWebserviceExtra` instance, you can use it just like the normal corresponding library.
 
 See the official documentation for more informations: https://devdocs.prestashop.com/1.7/webservice/tutorials/prestashop-webservice-lib/
 

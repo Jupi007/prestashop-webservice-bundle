@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Jupi007\PrestashopWebserviceBundle\Services;
+namespace Jupi007\PrestaShopWebserviceBundle\Services;
 
-use Jupi007\PrestashopWebserviceExtra\PrestashopWebservice as PrestashopWebserviceLib;
+use Jupi007\PrestaShopWebserviceExtra\PrestaShopWebservice as PrestaShopWebserviceLib;
 
-class PrestashopWebservice extends PrestaShopWebserviceLib
+class PrestaShopWebservice extends PrestaShopWebserviceLib
 {
 
 }

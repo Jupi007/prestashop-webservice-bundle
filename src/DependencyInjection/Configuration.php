@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Jupi007\PrestashopWebserviceBundle\DependencyInjection;
+namespace Jupi007\PrestaShopWebserviceBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

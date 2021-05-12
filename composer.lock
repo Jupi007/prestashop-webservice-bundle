@@ -26,7 +26,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Jupi007\\PrestashopWebserviceExtra\\": "src/"
+                    "Jupi007\\PrestaShopWebserviceExtra\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",

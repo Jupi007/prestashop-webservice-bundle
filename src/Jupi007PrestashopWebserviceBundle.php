@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Jupi007\PrestashopWebserviceBundle;
+namespace Jupi007\PrestaShopWebserviceBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class Jupi007PrestashopWebserviceBundle extends Bundle
+class Jupi007PrestaShopWebserviceBundle extends Bundle
 {
 }

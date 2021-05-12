@@ -18,12 +18,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Jupi007\\PrestashopWebserviceBundle\\": "src/"
+            "Jupi007\\PrestaShopWebserviceBundle\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Jupi007\\PrestashopWebserviceBundle\\Tests\\": "tests/"
+            "Jupi007\\PrestaShopWebserviceBundle\\Tests\\": "tests/"
         }
     }
 }
