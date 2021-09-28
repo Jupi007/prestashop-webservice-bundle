@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Jupi007\PrestaShopWebserviceBundle\DependencyInjection;
+namespace Jupi\PrestaShopWebserviceBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
-use Jupi007\PrestaShopWebserviceBundle\Services\PrestaShopWebservice;
-use Jupi007\PrestaShopWebserviceBundle\Services\PrestaShopWebserviceExtra;
+use Jupi\PrestaShopWebserviceBundle\Services\PrestaShopWebservice;
+use Jupi\PrestaShopWebserviceBundle\Services\PrestaShopWebserviceExtra;
 
-class Jupi007PrestaShopWebserviceExtension extends Extension
+class JupiPrestaShopWebserviceExtension extends Extension
 {
     public function load(array $configs, ContainerBuilder $container)
     {

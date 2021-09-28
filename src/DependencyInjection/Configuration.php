@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Jupi007\PrestaShopWebserviceBundle\DependencyInjection;
+namespace Jupi\PrestaShopWebserviceBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -11,7 +11,7 @@ class Configuration implements ConfigurationInterface
 {
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder('jupi007_presta_shop_webservice');
+        $treeBuilder = new TreeBuilder('jupi_presta_shop_webservice');
 
         $treeBuilder->getRootNode()
             ->addDefaultsIfNotSet()

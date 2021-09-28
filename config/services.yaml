@@ -1,16 +1,16 @@
 services:
-    Jupi007\PrestaShopWebserviceBundle\Services\PrestaShopWebservice:
+    Jupi\PrestaShopWebserviceBundle\Services\PrestaShopWebservice:
         arguments: ['', '', '']
         public: true
 
-    jupi007_prestashop_webservice:
-        alias: Jupi007\PrestaShopWebserviceBundle\Services\PrestaShopWebservice
+    jupi_prestashop_webservice:
+        alias: Jupi\PrestaShopWebserviceBundle\Services\PrestaShopWebservice
         public: true
 
-    Jupi007\PrestaShopWebserviceBundle\Services\PrestaShopWebserviceExtra:
+    Jupi\PrestaShopWebserviceBundle\Services\PrestaShopWebserviceExtra:
         arguments: ['', '', '']
         public: true
 
-    jupi007_prestashop_webservice_extra:
-        alias: Jupi007\PrestaShopWebserviceBundle\Services\PrestaShopWebserviceExtra
+    jupi_prestashop_webservice_extra:
+        alias: Jupi\PrestaShopWebserviceBundle\Services\PrestaShopWebserviceExtra
         public: true

@@ -1,4 +1,4 @@
-<h1 align="center">Jupi007 PrestaShop Webservice (Extra) Bundle</h1>
+<h1 align="center">Jupi PrestaShop Webservice (Extra) Bundle</h1>
 
 Symfony integration of [PrestaShop Webservice lib](https://github.com/PrestaShop/PrestaShop-webservice-lib) and [PrestaShop Webservice lib Extra](https://github.com/Jupi007/prestashop-webservice-extra).
 
@@ -16,7 +16,7 @@ Applications that use Symfony Flex
 Open a command console, enter your project directory and execute:
 
 ```console
-$ composer require "jupi007/prestashop-webservice-bundle"
+$ composer require "jupi/prestashop-webservice-bundle"
 ```
 
 Applications that don't use Symfony Flex
@@ -28,7 +28,7 @@ Open a command console, enter your project directory and execute the
 following command to download the latest stable version of this bundle:
 
 ```console
-$ composer require "jupi007/prestashop-webservice-bundle"
+$ composer require "jupi/prestashop-webservice-bundle"
 ```
 
 ### Step 2: Enable the Bundle
@@ -41,7 +41,7 @@ in the `config/bundles.php` file of your project:
 
 return [
     // ...
-    Jupi007\PrestaShopWebserviceBundle\Jupi007PrestaShopWebserviceBundle::class => ['all' => true],
+    Jupi\PrestaShopWebserviceBundle\JupiPrestaShopWebserviceBundle::class => ['all' => true],
 ];
 ```
 
@@ -57,10 +57,10 @@ First at all, you must enable the webservice feature of your PrestaShop store an
 
 It is recommended to fill secret infos like API keys into `.env.local` file.
 
-To do this, create a `config/packages/jupi007_presta_shop_webservice.yaml`:
+To do this, create a `config/packages/jupi_presta_shop_webservice.yaml`:
 
 ```yaml
-jupi007_presta_shop_webservice:
+jupi_presta_shop_webservice:
   connection:
     store_root_path: '%env(PRESTA_WEBSERVICE_ROOT_PATH)%'
     authentication_key: '%env(PRESTA_WEBSERVICE_AUTH_KEY)%'
@@ -76,16 +76,16 @@ PRESTA_WEBSERVICE_AUTH_KEY=ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789
 Usage
 =====
 
-Just inject the service by type-hinting an argument with the `Jupi007\PrestaShopWebserviceBundle\Services\PrestaShopWebservice` or `PrestaShopWebserviceExtra` class:
+Just inject the service by type-hinting an argument with the `Jupi\PrestaShopWebserviceBundle\Services\PrestaShopWebservice` or `PrestaShopWebserviceExtra` class:
 
 ```php
 // src/Controller/ProductController.php
 namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
-use Jupi007\PrestaShopWebserviceBundle\Services\PrestaShopWebservice;
+use Jupi\PrestaShopWebserviceBundle\Services\PrestaShopWebservice;
 // or
-use Jupi007\PrestaShopWebserviceBundle\Services\PrestaShopWebserviceExtra;
+use Jupi\PrestaShopWebserviceBundle\Services\PrestaShopWebserviceExtra;
 
 class ProductController
 {

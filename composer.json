@@ -1,5 +1,5 @@
 {
-    "name": "jupi007/prestashop-webservice-bundle",
+    "name": "jupi/prestashop-webservice-bundle",
     "description": "Symfony integration for PrestaShop Webservice lib",
     "type": "symfony-bundle",
     "license": "MIT",
@@ -10,19 +10,19 @@
         }
     ],
     "require": {
-        "jupi007/prestashop-webservice-lib-extra": "^1.1.0"
+        "jupi/prestashop-webservice-lib-extra": "^1.2.0"
     },
     "require-dev": {
         "symfony/framework-bundle": "5.2.*"
     },
     "autoload": {
         "psr-4": {
-            "Jupi007\\PrestaShopWebserviceBundle\\": "src/"
+            "Jupi\\PrestaShopWebserviceBundle\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Jupi007\\PrestaShopWebserviceBundle\\Tests\\": "tests/"
+            "Jupi\\PrestaShopWebserviceBundle\\Tests\\": "tests/"
         }
     }
 }
