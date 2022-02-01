@@ -13,7 +13,7 @@
         "jupi/prestashop-webservice-lib-extra": "^1.2.0"
     },
     "require-dev": {
-        "symfony/framework-bundle": "5.2.*"
+        "symfony/framework-bundle": "5.3.*"
     },
     "autoload": {
         "psr-4": {
