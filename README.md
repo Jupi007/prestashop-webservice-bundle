@@ -82,15 +82,21 @@ Just inject the service by type-hinting an argument with the `Jupi\PrestaShopWeb
 // src/Controller/ProductController.php
 namespace App\Controller;
 
-use Symfony\Component\HttpFoundation\Response;
 use Jupi\PrestaShopWebserviceBundle\Services\PrestaShopWebservice;
 // or
-use Jupi\PrestaShopWebserviceBundle\Services\PrestaShopWebserviceExtra;
+use Jupi\PrestaShopWebserviceExtra\PrestaShopWebserviceExtra;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
 
-class ProductController
+class ProductController extends AbstractController
 {
     /**
      * @Route("/products")
+     *
+     * @param PrestaShopWebservice $psWebservice
+     *
+     * @return Response
      */
     public function list(PrestaShopWebservice $psWebservice): Response
     {
@@ -103,6 +109,10 @@ class ProductController
 
     /**
      * @Route("/products")
+     *
+     * @param PrestaShopWebserviceExtra $psWebservice
+     *
+     * @return Response
      */
     public function list(PrestaShopWebserviceExtra $psWebservice): Response
     {
