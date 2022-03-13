@@ -84,7 +84,8 @@ namespace App\Controller;
 
 use Jupi\PrestaShopWebserviceBundle\Services\PrestaShopWebservice;
 // or
-use Jupi\PrestaShopWebserviceExtra\PrestaShopWebserviceExtra;
+use Jupi\PrestaShopWebserviceBundle\Services\PrestaShopWebserviceExtra;
+
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
