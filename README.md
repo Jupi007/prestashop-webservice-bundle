@@ -91,13 +91,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class ProductController extends AbstractController
 {
-    /**
-     * @Route("/products")
-     *
-     * @param PrestaShopWebservice $psWebservice
-     *
-     * @return Response
-     */
+    #[Route('/products', name: 'products')]
     public function list(PrestaShopWebservice $psWebservice): Response
     {
         $products = $psWebservice->get(['resource' => 'products']);
@@ -107,13 +101,7 @@ class ProductController extends AbstractController
 
     // or
 
-    /**
-     * @Route("/products")
-     *
-     * @param PrestaShopWebserviceExtra $psWebservice
-     *
-     * @return Response
-     */
+    #[Route('/products', name: 'products')]
     public function list(PrestaShopWebserviceExtra $psWebservice): Response
     {
         $products = $psWebservice->get('products')
